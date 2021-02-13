@@ -9,10 +9,11 @@ public class Controller {
 
     private final UserView userView;
     private final Bank bank;
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
     private Menu menu = Menu.MAIN_MENU;
 
     public Controller(String dataBaseName) {
+        this.scanner = new Scanner(System.in);
         this.userView = new UserView();
         this.bank = new Bank(dataBaseName);
     }
@@ -46,7 +47,6 @@ public class Controller {
                 default:
                     userView.showUnsupportedOperation();
             }
-
         }
     }
 

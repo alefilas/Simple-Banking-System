@@ -57,8 +57,6 @@ public class Bank {
 
     public String addIncome() {
 
-        System.out.println("Enter income:");
-
         int income;
         try {
             income = Integer.parseInt(scanner.nextLine());
