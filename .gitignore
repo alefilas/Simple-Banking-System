@@ -2,3 +2,5 @@
 /Problems
 .idea/
 .gradle/
+build
+out
